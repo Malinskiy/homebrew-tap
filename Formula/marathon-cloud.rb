@@ -4,12 +4,12 @@
 class MarathonCloud < Formula
   desc "Command-line interface for Marathon Cloud"
   homepage "https://github.com/MarathonLabs/marathon-cloud-cli"
-  version "1.0.31"
+  version "1.0.32"
   license "MIT"
 
   on_macos do
-    url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.31/marathon-cloud-v1.0.31-universal-apple-darwin.tar.gz"
-    sha256 "318e989efc67fc39f5d70d7b2475ac8ffecf11a48ed8cb5b59f24d8e2dabc7dd"
+    url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.32/marathon-cloud-v1.0.32-universal-apple-darwin.tar.gz"
+    sha256 "e8b69451a18da321357f0748ea088c6fee33d3b8ecb65392f0885f37150c2881"
 
     def install
       bin.install "marathon-cloud"
@@ -34,8 +34,8 @@ class MarathonCloud < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.31/marathon-cloud-v1.0.31-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b3d14dcf450b5cd68677d6a0c26ef4929c7b8111c1215024db7072ca563f02c9"
+      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.32/marathon-cloud-v1.0.32-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f76bbfff0b793ee6b04ce58ee9ebe57a735a0f63ec7457986cf92e361eee0170"
 
       def install
         bin.install "marathon-cloud"
@@ -58,8 +58,8 @@ class MarathonCloud < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.31/marathon-cloud-v1.0.31-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "20bbfcac114dc6e0eec72a5fea6cabdc8fb57d9f0b6f03989e3c4314f9639e4d"
+      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.32/marathon-cloud-v1.0.32-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ea517921b99c04ad276f599a85f77fc5bbc9a0c2bb07ce1b6b0e4601dd5613e4"
 
       def install
         bin.install "marathon-cloud"
@@ -82,8 +82,8 @@ class MarathonCloud < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.31/marathon-cloud-v1.0.31-arm-unknown-linux-gnueabihf.tar.gz"
-      sha256 "3d78a4da6657f19449d0c5582eb66fa4d59ab660c2e878a886e1b8631283d357"
+      url "https://github.com/MarathonLabs/marathon-cloud-cli/releases/download/1.0.32/marathon-cloud-v1.0.32-arm-unknown-linux-gnueabihf.tar.gz"
+      sha256 "eac0667bdf5febf726a1d6b10e7dc7aeb3df989390bd2fbd15fa2e7366957b98"
 
       def install
         bin.install "marathon-cloud"
